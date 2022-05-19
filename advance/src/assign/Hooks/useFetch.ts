@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react"
 // import { User } from "./Githubs"
 import axios from "axios"
+
 export const useFetch=<T>(url:string,params:Record<string,unknown>)=>{
     const [loading,setLoading]=useState(false)
     const [err,setErr]=useState(false)
